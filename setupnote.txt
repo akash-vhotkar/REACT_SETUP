@@ -1,0 +1,37 @@
+eslint create 
+START
+step 1
+npm init @eslint/config
+complete the steps 
+
+END 
+
+
+pretteir with eslint 
+
+step 1
+install packages
+npm install --save-dev eslint-config-prettier eslint-plugin-prettier
+
+step 2
+edit config  file add below fields
+{
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+}
+
+step 3 create .pretteirrc file 
+get attributes into pretteirrc file
+
+
+END 
+
+babel with eslint 
+START 
+npm install --save-dev @babel/eslint-parser @babel/preset-react @babel/preset-flow @babel/preset-env
+@babel/plugin-transform-react-jsx-source
+
+END 
