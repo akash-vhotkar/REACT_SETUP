@@ -1,0 +1,104 @@
+reference 
+https://www.digitalocean.com/community/tutorials/linting-and-formatting-with-eslint-in-vs-code
+
+
+configulation file named as .eslintrc
+
+
+
+Environments - which environments your script is designed to run in. 
+
+extends 
+A plugin on the other
+hand provides you with a set of rules that you can individually apply depending on your need
+
+parser section 
+A parser just reads a text into an internal, 
+more abstract representation, often a tree or graph of some sort.
+in out example we using babel as parser which  es6 into es5 
+
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code 
+into 
+a backwards compatible version of JavaScript in current and older browsers or environments.
+Rules 
+
+example 
+ "parser": "@babel/eslint-parser"
+
+parser options that are passed into the our current parser
+
+"parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+
+Then rules were we are declaring rules of the eslint 
+
+
+
+
+
+
+
+prerequesites install  eslint globally 
+
+
+
+step  1
+npx eslint  --init 
+After these command they cmd will ask some questions 
+answer that then  all peer dependecies will installed for the  eslint javascript formatter 
+
+step 2
+check whether the eslint extension is installed  
+check whether the eslint extenstion option is enable 
+if not  please do 
+
+step 3
+settings
+go to settings of vscode change your default formatter to eslint 
+we need to eslint fix all the issues on the saving the code 
+mark tick on the format on save option  on vscode settings ooptions
+past below code into settings.json of the vscode 
+
+
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": ["javascript"]
+}
+
+
+
+
+error - produces a red underline
+warn - will produce a yellow underline
+off - will not display anything.
+
+off rule 
+After applying off rule the eslint does not show the any error 
+"no-console": "off"
+
+error example 
+telling eslint show error on something 
+if dont want double quotes into our code 
+["error", "double "]
+
+Rule example 
+
+  "quotes": [
+        "error",
+        "double"
+    ]
+Now, if you include single quotes in your quote, ESLint will raise an error.
+
+
+what is always in the eslint
+
+example 
+in these example eslint will show error when we dont have the semicolon at the end of the line
+ "semi": ["error", "always"],

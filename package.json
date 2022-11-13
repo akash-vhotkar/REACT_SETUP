@@ -46,15 +46,24 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.18.13",
-    "eslint": "^8.23.1",
-    "eslint-config-prettier": "^8.5.0",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/plugin-transform-react-jsx-source": "^7.14.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-direct-import": "^1.0.0",
+    "babel-plugin-import": "^1.13.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "8.3.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.5",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-react": "^7.31.8"
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-prettier": "3.4.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "prettier": "2.2.1"
   }
 }
